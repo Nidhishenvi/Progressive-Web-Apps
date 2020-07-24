@@ -1,0 +1,13 @@
+body {
+    background-color: blueviolet;
+}
+h1{
+    color:black;
+    margin-left:20px;
+}
+h1{border-style: double;}
+
+label {
+    color:brown;
+}
+body{border-style: solid;}

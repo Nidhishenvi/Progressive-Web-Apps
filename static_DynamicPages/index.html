@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PWA Lab-8</title>
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" type ="text/css" href="style.css">
+        <img src="a.png" class="img-rounded"/>
+        <script>
+            function check(){
+                var username=document.getElementById("username").value;
+                var password=document.getElementById("password").value;
+                if(username==="nidhi" && password==="nidhi"){
+                    return window.location.href="successful.html"
+                }
+                else{
+                    return window.location.href="unsuccessful.html"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>REGISTRATION !!!</h1>
+        <label>Username</label> <input type="text" id="username"><br>
+        <label>Password</label> <input type="password" id="password"><br>
+        <button type="button" onclick="check()">Submit</button>
+        <script>
+            if('serviceWorker' in navigator){
+                navigator.serviceWorker.register('serviceWorker.js')
+                .then(registeration=>{
+                    console.log("Registered successfully");
+                })
+                .catch(err=>{
+                    console.log("Registration failed"+err);
+                })
+            }
+        </script>
+    </body>
+</html>
