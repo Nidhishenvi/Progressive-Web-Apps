@@ -1,0 +1,26 @@
+<body>
+    <!-- start body -->
+   
+    <div class="container">
+        
+            <h3 class="align-content-center font-weight-bold text-center">Session 3</h3>
+            <div class=" form-control">
+                <img src="img3.png" class="img-rounded"/>
+            </div> 
+            <hr>
+            <span><a href=""></a></span>
+    </div>
+    <!-- end body -->
+    <script>
+    if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('service-worker.js')
+            .then(registration =>{
+                console.log('Service worker registered');
+            })
+            .catch(err => {
+                console.error(err);
+            })
+    }
+
+    </script>
+</body>

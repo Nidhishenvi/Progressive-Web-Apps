@@ -1,0 +1,21 @@
+{
+    "name": "GitHub User Data",
+    "short_name": "GitHub",
+    "description": "Retrive GitHub User Data",
+    "start_url": "/pwa9/",
+    "icons": [
+    {
+      "src": "icons256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "icons512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+    "background_color": "#69f0ae",
+    "theme_color": "#69f0ae",
+    "display": "fullscreen"
+  }

@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>GitHub User Data</title>
+	<link rel="manifest" href="manifest.json">
+</head>
+<body class="green accent-2">
+    <label for="uname">Enter username</label>
+    <input type="text" id="uname" required/><br>
+    <button id="fetch_user" class="btn red">Submit</button>
+	<div id="profilecard">
+		<img id="gitImg" style="width:500px; margin-top: 10px;">
+		<h4 id="gitName"></h4>
+		<p id="gitBio"></p>
+		<p class="center-align" id="gitRepo"></p>
+		<p id="gitLoc"></p>
+	</div>
+	
+	<script>
+        if('serviceWorker' in navigator){
+            try{
+                navigator.serviceWorker.register('serviceworker.js')
+                    .then(registration => {
+                        console.log('service worker registered');
+                })
+            }
+            catch (err){
+                console.log(err);
+            }
+        }    
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
